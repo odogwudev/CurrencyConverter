@@ -1,5 +1,6 @@
 package com.odogwudev.cowrywise.data.repository
 
+import android.util.Log
 import com.odogwudev.cowrywise.data.model.ExchangeRateEntity
 import com.odogwudev.cowrywise.data.model.fluctuationresponse.FluctuationResponse
 import com.odogwudev.cowrywise.domain.model.ExchangeRateDao
@@ -9,6 +10,7 @@ import com.odogwudev.cowrywise.domain.model.SymbolsDao
 import com.odogwudev.cowrywise.domain.model.TimeSeriesDao
 import com.odogwudev.cowrywise.domain.model.TimeSeriesRateEntity
 import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.channelFlow
 import kotlinx.coroutines.flow.emitAll
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.flow
@@ -104,38 +106,31 @@ class FixerRepository @Inject constructor(
 
     }
 
-    fun convertLocally(
-        from: String,  // e.g. "USD"
-        to: String,    // e.g. "PLN"
+    suspend fun convertLocally(
+        from: String,
+        to: String,
         amount: Double
     ): Flow<Resource<Double>> = flow {
         emit(Resource.Loading)
         try {
             // 1) Attempt to get rates from DB (where base="EUR").
             var fromEntity = exchangeDao.getRateByCurrency("EUR", from)
-            var toEntity = exchangeDao.getRateByCurrency("EUR", to)
+            var toEntity   = exchangeDao.getRateByCurrency("EUR", to)
 
-            // 2) If either is missing, fetch them from the network.
+            // 2) If missing, do a one-time fetch.
             if (fromEntity == null || toEntity == null) {
-                // We'll fetch from the "latest" endpoint to get those 2 + EUR
-                // Because base won't matter on free plan, pass base="" or "EUR".
-                // We need at least from, to, and EUR in symbols.
                 val neededSymbols = listOf(from, to, "EUR")
                     .filter { it.isNotBlank() }
                     .joinToString(",")
-
-                // We only want the first emission from getLatestRates (which is loading -> success/error).
-                // So we can do `.first()` to wait for the initial result.
-                val fetchResult = getLatestRates(base = "", symbols = neededSymbols).first()
-
-                // If that fetch fails, it will emit Resource.Error, so handle that:
+                // *** Single function call, not a flow. ***
+                val fetchResult = fetchLatestRatesOnce(base = "", symbols = neededSymbols)
                 if (fetchResult is Resource.Error) {
-                    // Forward the error to the UI
-                    emit(Resource.Error(fetchResult.message))
+                    // Return the error
+                    emit(Resource.Error(fetchResult.message, fetchResult.cause))
                     return@flow
                 }
 
-                // 3) After a successful network fetch, re-check the DB.
+                // re-check the DB after success
                 fromEntity = exchangeDao.getRateByCurrency("EUR", from)
                 toEntity   = exchangeDao.getRateByCurrency("EUR", to)
             }
@@ -146,21 +141,56 @@ class FixerRepository @Inject constructor(
                 return@flow
             }
 
-            // 5) Now do local conversion:
-            // e.g. 1 EUR = 1.0378 USD => fromRate = 1.0378
-            // e.g. 1 EUR = 4.14 PLN   => toRate   = 4.14
             val fromRate = fromEntity.rate
             val toRate   = toEntity.rate
-
-            // Formula: amountInB = (amount / fromRate) * toRate
-            val result = (amount / fromRate) * toRate
-
-            emit(Resource.Success(result))
+            val result   = (amount / fromRate) * toRate
+            emit(Resource.Success(result.round()))
 
         } catch (e: Exception) {
-            emit(Resource.Error("Conversion failed: ${e.localizedMessage}"))
+            emit(Resource.Error("Conversion failed: ${e.localizedMessage}", e))
         }
     }
+    fun Double.round(decimals: Int = 2): Double = "%.${decimals}f".format(this).toDouble()
+
+    // Instead of returning Flow<Resource<List<ExchangeRateEntity>>>
+    suspend fun fetchLatestRatesOnce(
+        base: String,
+        symbols: String
+    ): Resource<List<ExchangeRateEntity>> {
+        return try {
+            val remoteResponse = api.getLatestRates(
+                apiKey = apiKey,
+                base = base,
+                symbols = symbols
+            )
+
+            if (remoteResponse.success && remoteResponse.rates != null
+                && remoteResponse.date != null && remoteResponse.base != null) {
+
+                // Store in DB
+                exchangeDao.deleteRatesByBase(remoteResponse.base)
+                val date = remoteResponse.date
+                val rateEntities = remoteResponse.rates.map { (currencyCode, rateValue) ->
+                    ExchangeRateEntity(
+                        currencyCode = currencyCode,
+                        rate = rateValue,
+                        base = remoteResponse.base,
+                        date = date
+                    )
+                }
+                exchangeDao.insertRates(rateEntities)
+
+                // Now read from DB again
+                val updatedList = exchangeDao.getRatesByBaseOnce(remoteResponse.base)
+                Resource.Success(updatedList)
+            } else {
+                Resource.Error("API call failed or invalid response")
+            }
+        } catch (e: Exception) {
+            Resource.Error("Network error: ${e.localizedMessage}", e)
+        }
+    }
+
 
 
     // 3) Historical Rates

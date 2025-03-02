@@ -76,6 +76,7 @@ import com.odogwudev.cowrywise.presenntation.view.components.SelectableItemCard
 import com.odogwudev.cowrywise.presenntation.view.components.SelectionTitleListOnlyContent
 import com.odogwudev.cowrywise.presenntation.viewmodel.FixerViewModel
 import kotlinx.coroutines.launch
+import java.util.Locale
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -88,7 +89,7 @@ fun FixerRatesScreen(
 
     val countries by fixerViewModel.countries.collectAsState()
 
-    val convertResult by fixerViewModel.ratesState.collectAsState()
+    val convertResult by fixerViewModel.convertResultLocally.collectAsState()
 
     var showParentCountry by rememberSaveable { mutableStateOf(false) }
     var showSubCountry by rememberSaveable { mutableStateOf(false) }
@@ -125,32 +126,8 @@ fun FixerRatesScreen(
         is Resource.Loading -> toValue= "Loading..."
         is Resource.Error ->toValue ="Error: ${(convertResult as Resource.Error).message}"
         is Resource.Success -> {
-            val entity = (convertResult as Resource.Success<List<ExchangeRateEntity>>).data.firstOrNull()
-            if (entity != null) {
-                val fromDouble = fromValue.toDoubleOrNull() ?: 0.0
-                val final = entity.rate * fromDouble
-                toValue= final.toString()
-            } else {
-                toValue ="Empty list from DB"
-            }
-        }
-    }
-    LaunchedEffect(Unit) {
-        val localResult = convertResult
-        when (val localVal = convertResult) {
-            is Resource.Success -> {
-                // localVal.data is List<ExchangeRateEntity>
-                val entity = localVal.data.firstOrNull()
-                if (entity != null) {
-                    val fromDouble = fromValue.toDoubleOrNull() ?: 0.0
-                    val final = entity.rate * fromDouble
-                    toValue = final.toString()
-                } else {
-                    toValue = "Error (empty list)"
-                }
-            }
-            is Resource.Error -> toValue = "Error"
-            Resource.Loading -> toValue = "No value"
+            val entity = (convertResult as Resource.Success).data
+            toValue= String.format("%.2f", entity)
         }
     }
     Scaffold(
@@ -214,6 +191,7 @@ fun FixerRatesScreen(
                     trailingIcon = {
                         Text(selectedParentCountry?.countryCode ?: "")
                     },
+                    visualTransformation = DecimalAmountTransformation(),
                     colors = androidx.compose.material3.TextFieldDefaults.colors(
                         focusedIndicatorColor = Color.Transparent,
                         unfocusedIndicatorColor = Color.Transparent
@@ -284,8 +262,8 @@ fun FixerRatesScreen(
                         val amountDouble = fromValue.toDoubleOrNull() ?: 0.0
                         val fromId = selectedParentCountry!!.currencyId ?: ""
                         val toId = selectedSubCountry!!.currencyId ?: ""
-                        fixerViewModel.loadLatestRates(
-                            base = fromId, symbols = toId)
+                        fixerViewModel.convertRatesLocally(
+                            from = fromId, to = toId, amount = amountDouble)
                     },
                     modifier = Modifier
                         .padding(16.dp)

@@ -15,6 +15,9 @@ interface ExchangeRateDao {
     @Query("SELECT * FROM exchange_rates WHERE base = :base")
     fun getRatesByBase(base: String): Flow<List<ExchangeRateEntity>>
 
+    @Query("SELECT * FROM exchange_rates WHERE base = :base")
+    suspend fun getRatesByBaseOnce(base: String): List<ExchangeRateEntity>
+
     @Query("DELETE FROM exchange_rates WHERE base = :base")
     suspend fun deleteRatesByBase(base: String)
 
