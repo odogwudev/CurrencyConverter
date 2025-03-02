@@ -22,9 +22,9 @@ interface TimeSeriesDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertTimeSeriesRates(symbols: List<TimeSeriesRateEntity>)
 
-    @Query("SELECT * FROM symbols")
+    @Query("SELECT * FROM timeseries_rates")
     fun getAllTimeSeriesRates(): Flow<List<TimeSeriesRateEntity>>
 
-    @Query("DELETE FROM symbols")
+    @Query("DELETE FROM timeseries_rates")
     suspend fun clearAllTimeSeriesRates()
 }

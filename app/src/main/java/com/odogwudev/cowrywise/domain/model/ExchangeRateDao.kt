@@ -17,4 +17,7 @@ interface ExchangeRateDao {
 
     @Query("DELETE FROM exchange_rates WHERE base = :base")
     suspend fun deleteRatesByBase(base: String)
+
+    @Query("SELECT * FROM exchange_rates WHERE base = :base AND currencyCode = :currency LIMIT 1")
+    suspend fun getRateByCurrency(base: String, currency: String): ExchangeRateEntity?
 }

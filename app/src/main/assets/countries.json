@@ -1,0 +1,1199 @@
+[
+  {
+    "currencyId": "AED",
+    "currencyName": "United Arab Emirates Dirham",
+    "countryCode": "AE",
+    "currencySymbol": "د.إ",
+    "flagUrl": "https://flagcdn.com/ae.svg"
+  },
+  {
+    "currencyId": "AFN",
+    "currencyName": "Afghan Afghani",
+    "countryCode": "AF",
+    "currencySymbol": "؋",
+    "flagUrl": "https://flagcdn.com/af.svg"
+  },
+  {
+    "currencyId": "ALL",
+    "currencyName": "Albanian Lek",
+    "countryCode": "AL",
+    "currencySymbol": "L",
+    "flagUrl": "https://flagcdn.com/al.svg"
+  },
+  {
+    "currencyId": "AMD",
+    "currencyName": "Armenian Dram",
+    "countryCode": "AM",
+    "currencySymbol": "֏",
+    "flagUrl": "https://flagcdn.com/am.svg"
+  },
+  {
+    "currencyId": "ANG",
+    "currencyName": "Netherlands Antillean Guilder",
+    "countryCode": "CW",
+    "currencySymbol": "ƒ",
+    "flagUrl": "https://flagcdn.com/cw.svg"
+  },
+  {
+    "currencyId": "AOA",
+    "currencyName": "Angolan Kwanza",
+    "countryCode": "AO",
+    "currencySymbol": "Kz",
+    "flagUrl": "https://flagcdn.com/ao.svg"
+  },
+  {
+    "currencyId": "ARS",
+    "currencyName": "Argentine Peso",
+    "countryCode": "AR",
+    "currencySymbol": "$",
+    "flagUrl": "https://flagcdn.com/ar.svg"
+  },
+  {
+    "currencyId": "AUD",
+    "currencyName": "Australian Dollar",
+    "countryCode": "AU",
+    "currencySymbol": "$",
+    "flagUrl": "https://flagcdn.com/au.svg"
+  },
+  {
+    "currencyId": "AWG",
+    "currencyName": "Aruban Florin",
+    "countryCode": "AW",
+    "currencySymbol": "ƒ",
+    "flagUrl": "https://flagcdn.com/aw.svg"
+  },
+  {
+    "currencyId": "AZN",
+    "currencyName": "Azerbaijani Manat",
+    "countryCode": "AZ",
+    "currencySymbol": "₼",
+    "flagUrl": "https://flagcdn.com/az.svg"
+  },
+  {
+    "currencyId": "BAM",
+    "currencyName": "Bosnia-Herzegovina Convertible Mark",
+    "countryCode": "BA",
+    "currencySymbol": "KM",
+    "flagUrl": "https://flagcdn.com/ba.svg"
+  },
+  {
+    "currencyId": "BBD",
+    "currencyName": "Barbadian Dollar",
+    "countryCode": "BB",
+    "currencySymbol": "$",
+    "flagUrl": "https://flagcdn.com/bb.svg"
+  },
+  {
+    "currencyId": "BDT",
+    "currencyName": "Bangladeshi Taka",
+    "countryCode": "BD",
+    "currencySymbol": "৳",
+    "flagUrl": "https://flagcdn.com/bd.svg"
+  },
+  {
+    "currencyId": "BGN",
+    "currencyName": "Bulgarian Lev",
+    "countryCode": "BG",
+    "currencySymbol": "лв",
+    "flagUrl": "https://flagcdn.com/bg.svg"
+  },
+  {
+    "currencyId": "BHD",
+    "currencyName": "Bahraini Dinar",
+    "countryCode": "BH",
+    "currencySymbol": ".د.ب",
+    "flagUrl": "https://flagcdn.com/bh.svg"
+  },
+  {
+    "currencyId": "BIF",
+    "currencyName": "Burundian Franc",
+    "countryCode": "BI",
+    "currencySymbol": "Fr",
+    "flagUrl": "https://flagcdn.com/bi.svg"
+  },
+  {
+    "currencyId": "BMD",
+    "currencyName": "Bermudan Dollar",
+    "countryCode": "BM",
+    "currencySymbol": "$",
+    "flagUrl": "https://flagcdn.com/bm.svg"
+  },
+  {
+    "currencyId": "BND",
+    "currencyName": "Brunei Dollar",
+    "countryCode": "BN",
+    "currencySymbol": "$",
+    "flagUrl": "https://flagcdn.com/bn.svg"
+  },
+  {
+    "currencyId": "BOB",
+    "currencyName": "Bolivian Boliviano",
+    "countryCode": "BO",
+    "currencySymbol": "Bs.",
+    "flagUrl": "https://flagcdn.com/bo.svg"
+  },
+  {
+    "currencyId": "BRL",
+    "currencyName": "Brazilian Real",
+    "countryCode": "BR",
+    "currencySymbol": "R$",
+    "flagUrl": "https://flagcdn.com/br.svg"
+  },
+  {
+    "currencyId": "BSD",
+    "currencyName": "Bahamian Dollar",
+    "countryCode": "BS",
+    "currencySymbol": "$",
+    "flagUrl": "https://flagcdn.com/bs.svg"
+  },
+  {
+    "currencyId": "BTC",
+    "currencyName": "Bitcoin",
+    "countryCode": "XX",
+    "currencySymbol": "₿",
+    "flagUrl": "https://flagcdn.com/un.svg"
+  },
+  {
+    "currencyId": "BTN",
+    "currencyName": "Bhutanese Ngultrum",
+    "countryCode": "BT",
+    "currencySymbol": "Nu.",
+    "flagUrl": "https://flagcdn.com/bt.svg"
+  },
+  {
+    "currencyId": "BWP",
+    "currencyName": "Botswanan Pula",
+    "countryCode": "BW",
+    "currencySymbol": "P",
+    "flagUrl": "https://flagcdn.com/bw.svg"
+  },
+  {
+    "currencyId": "BYN",
+    "currencyName": "New Belarusian Ruble",
+    "countryCode": "BY",
+    "currencySymbol": "Br",
+    "flagUrl": "https://flagcdn.com/by.svg"
+  },
+  {
+    "currencyId": "BYR",
+    "currencyName": "Belarusian Ruble",
+    "countryCode": "BY",
+    "currencySymbol": "Br",
+    "flagUrl": "https://flagcdn.com/by.svg"
+  },
+  {
+    "currencyId": "BZD",
+    "currencyName": "Belize Dollar",
+    "countryCode": "BZ",
+    "currencySymbol": "$",
+    "flagUrl": "https://flagcdn.com/bz.svg"
+  },
+  {
+    "currencyId": "CAD",
+    "currencyName": "Canadian Dollar",
+    "countryCode": "CA",
+    "currencySymbol": "$",
+    "flagUrl": "https://flagcdn.com/ca.svg"
+  },
+  {
+    "currencyId": "CDF",
+    "currencyName": "Congolese Franc",
+    "countryCode": "CD",
+    "currencySymbol": "Fr",
+    "flagUrl": "https://flagcdn.com/cd.svg"
+  },
+  {
+    "currencyId": "CHF",
+    "currencyName": "Swiss Franc",
+    "countryCode": "CH",
+    "currencySymbol": "Fr",
+    "flagUrl": "https://flagcdn.com/ch.svg"
+  },
+  {
+    "currencyId": "CLF",
+    "currencyName": "Chilean Unit of Account (UF)",
+    "countryCode": "CL",
+    "currencySymbol": "UF",
+    "flagUrl": "https://flagcdn.com/cl.svg"
+  },
+  {
+    "currencyId": "CLP",
+    "currencyName": "Chilean Peso",
+    "countryCode": "CL",
+    "currencySymbol": "$",
+    "flagUrl": "https://flagcdn.com/cl.svg"
+  },
+  {
+    "currencyId": "CNY",
+    "currencyName": "Chinese Yuan",
+    "countryCode": "CN",
+    "currencySymbol": "¥",
+    "flagUrl": "https://flagcdn.com/cn.svg"
+  },
+  {
+    "currencyId": "CNH",
+    "currencyName": "Chinese Yuan Offshore",
+    "countryCode": "CN",
+    "currencySymbol": "¥",
+    "flagUrl": "https://flagcdn.com/cn.svg"
+  },
+  {
+    "currencyId": "COP",
+    "currencyName": "Colombian Peso",
+    "countryCode": "CO",
+    "currencySymbol": "$",
+    "flagUrl": "https://flagcdn.com/co.svg"
+  },
+  {
+    "currencyId": "CRC",
+    "currencyName": "Costa Rican Colón",
+    "countryCode": "CR",
+    "currencySymbol": "₡",
+    "flagUrl": "https://flagcdn.com/cr.svg"
+  },
+  {
+    "currencyId": "CUC",
+    "currencyName": "Cuban Convertible Peso",
+    "countryCode": "CU",
+    "currencySymbol": "$",
+    "flagUrl": "https://flagcdn.com/cu.svg"
+  },
+  {
+    "currencyId": "CUP",
+    "currencyName": "Cuban Peso",
+    "countryCode": "CU",
+    "currencySymbol": "$",
+    "flagUrl": "https://flagcdn.com/cu.svg"
+  },
+  {
+    "currencyId": "CVE",
+    "currencyName": "Cape Verdean Escudo",
+    "countryCode": "CV",
+    "currencySymbol": "$",
+    "flagUrl": "https://flagcdn.com/cv.svg"
+  },
+  {
+    "currencyId": "CZK",
+    "currencyName": "Czech Republic Koruna",
+    "countryCode": "CZ",
+    "currencySymbol": "Kč",
+    "flagUrl": "https://flagcdn.com/cz.svg"
+  },
+  {
+    "currencyId": "DJF",
+    "currencyName": "Djiboutian Franc",
+    "countryCode": "DJ",
+    "currencySymbol": "Fdj",
+    "flagUrl": "https://flagcdn.com/dj.svg"
+  },
+  {
+    "currencyId": "DKK",
+    "currencyName": "Danish Krone",
+    "countryCode": "DK",
+    "currencySymbol": "kr",
+    "flagUrl": "https://flagcdn.com/dk.svg"
+  },
+  {
+    "currencyId": "DOP",
+    "currencyName": "Dominican Peso",
+    "countryCode": "DO",
+    "currencySymbol": "RD$",
+    "flagUrl": "https://flagcdn.com/do.svg"
+  },
+  {
+    "currencyId": "DZD",
+    "currencyName": "Algerian Dinar",
+    "countryCode": "DZ",
+    "currencySymbol": "د.ج",
+    "flagUrl": "https://flagcdn.com/dz.svg"
+  },
+  {
+    "currencyId": "EGP",
+    "currencyName": "Egyptian Pound",
+    "countryCode": "EG",
+    "currencySymbol": "£",
+    "flagUrl": "https://flagcdn.com/eg.svg"
+  },
+  {
+    "currencyId": "ERN",
+    "currencyName": "Eritrean Nakfa",
+    "countryCode": "ER",
+    "currencySymbol": "Nfk",
+    "flagUrl": "https://flagcdn.com/er.svg"
+  },
+  {
+    "currencyId": "ETB",
+    "currencyName": "Ethiopian Birr",
+    "countryCode": "ET",
+    "currencySymbol": "Br",
+    "flagUrl": "https://flagcdn.com/et.svg"
+  },
+  {
+    "currencyId": "EUR",
+    "currencyName": "Euro",
+    "countryCode": "EU",
+    "currencySymbol": "€",
+    "flagUrl": "https://flagcdn.com/eu.svg"
+  },
+  {
+    "currencyId": "FJD",
+    "currencyName": "Fijian Dollar",
+    "countryCode": "FJ",
+    "currencySymbol": "$",
+    "flagUrl": "https://flagcdn.com/fj.svg"
+  },
+  {
+    "currencyId": "FKP",
+    "currencyName": "Falkland Islands Pound",
+    "countryCode": "FK",
+    "currencySymbol": "£",
+    "flagUrl": "https://flagcdn.com/fk.svg"
+  },
+  {
+    "currencyId": "GBP",
+    "currencyName": "British Pound Sterling",
+    "countryCode": "GB",
+    "currencySymbol": "£",
+    "flagUrl": "https://flagcdn.com/gb.svg"
+  },
+  {
+    "currencyId": "GEL",
+    "currencyName": "Georgian Lari",
+    "countryCode": "GE",
+    "currencySymbol": "₾",
+    "flagUrl": "https://flagcdn.com/ge.svg"
+  },
+  {
+    "currencyId": "GGP",
+    "currencyName": "Guernsey Pound",
+    "countryCode": "GG",
+    "currencySymbol": "£",
+    "flagUrl": "https://flagcdn.com/gg.svg"
+  },
+  {
+    "currencyId": "GHS",
+    "currencyName": "Ghanaian Cedi",
+    "countryCode": "GH",
+    "currencySymbol": "₵",
+    "flagUrl": "https://flagcdn.com/gh.svg"
+  },
+  {
+    "currencyId": "GIP",
+    "currencyName": "Gibraltar Pound",
+    "countryCode": "GI",
+    "currencySymbol": "£",
+    "flagUrl": "https://flagcdn.com/gi.svg"
+  },
+  {
+    "currencyId": "GMD",
+    "currencyName": "Gambian Dalasi",
+    "countryCode": "GM",
+    "currencySymbol": "D",
+    "flagUrl": "https://flagcdn.com/gm.svg"
+  },
+  {
+    "currencyId": "GNF",
+    "currencyName": "Guinean Franc",
+    "countryCode": "GN",
+    "currencySymbol": "Fr",
+    "flagUrl": "https://flagcdn.com/gn.svg"
+  },
+  {
+    "currencyId": "GTQ",
+    "currencyName": "Guatemalan Quetzal",
+    "countryCode": "GT",
+    "currencySymbol": "Q",
+    "flagUrl": "https://flagcdn.com/gt.svg"
+  },
+  {
+    "currencyId": "GYD",
+    "currencyName": "Guyanaese Dollar",
+    "countryCode": "GY",
+    "currencySymbol": "$",
+    "flagUrl": "https://flagcdn.com/gy.svg"
+  },
+  {
+    "currencyId": "HKD",
+    "currencyName": "Hong Kong Dollar",
+    "countryCode": "HK",
+    "currencySymbol": "$",
+    "flagUrl": "https://flagcdn.com/hk.svg"
+  },
+  {
+    "currencyId": "HNL",
+    "currencyName": "Honduran Lempira",
+    "countryCode": "HN",
+    "currencySymbol": "L",
+    "flagUrl": "https://flagcdn.com/hn.svg"
+  },
+  {
+    "currencyId": "HRK",
+    "currencyName": "Croatian Kuna",
+    "countryCode": "HR",
+    "currencySymbol": "kn",
+    "flagUrl": "https://flagcdn.com/hr.svg"
+  },
+  {
+    "currencyId": "HTG",
+    "currencyName": "Haitian Gourde",
+    "countryCode": "HT",
+    "currencySymbol": "G",
+    "flagUrl": "https://flagcdn.com/ht.svg"
+  },
+  {
+    "currencyId": "HUF",
+    "currencyName": "Hungarian Forint",
+    "countryCode": "HU",
+    "currencySymbol": "Ft",
+    "flagUrl": "https://flagcdn.com/hu.svg"
+  },
+  {
+    "currencyId": "IDR",
+    "currencyName": "Indonesian Rupiah",
+    "countryCode": "ID",
+    "currencySymbol": "Rp",
+    "flagUrl": "https://flagcdn.com/id.svg"
+  },
+  {
+    "currencyId": "ILS",
+    "currencyName": "Israeli New Sheqel",
+    "countryCode": "IL",
+    "currencySymbol": "₪",
+    "flagUrl": "https://flagcdn.com/il.svg"
+  },
+  {
+    "currencyId": "IMP",
+    "currencyName": "Manx pound",
+    "countryCode": "IM",
+    "currencySymbol": "£",
+    "flagUrl": "https://flagcdn.com/im.svg"
+  },
+  {
+    "currencyId": "INR",
+    "currencyName": "Indian Rupee",
+    "countryCode": "IN",
+    "currencySymbol": "₹",
+    "flagUrl": "https://flagcdn.com/in.svg"
+  },
+  {
+    "currencyId": "IQD",
+    "currencyName": "Iraqi Dinar",
+    "countryCode": "IQ",
+    "currencySymbol": "ع.د",
+    "flagUrl": "https://flagcdn.com/iq.svg"
+  },
+  {
+    "currencyId": "IRR",
+    "currencyName": "Iranian Rial",
+    "countryCode": "IR",
+    "currencySymbol": "﷼",
+    "flagUrl": "https://flagcdn.com/ir.svg"
+  },
+  {
+    "currencyId": "ISK",
+    "currencyName": "Icelandic Króna",
+    "countryCode": "IS",
+    "currencySymbol": "kr",
+    "flagUrl": "https://flagcdn.com/is.svg"
+  },
+  {
+    "currencyId": "JEP",
+    "currencyName": "Jersey Pound",
+    "countryCode": "JE",
+    "currencySymbol": "£",
+    "flagUrl": "https://flagcdn.com/je.svg"
+  },
+  {
+    "currencyId": "JMD",
+    "currencyName": "Jamaican Dollar",
+    "countryCode": "JM",
+    "currencySymbol": "J$",
+    "flagUrl": "https://flagcdn.com/jm.svg"
+  },
+  {
+    "currencyId": "JOD",
+    "currencyName": "Jordanian Dinar",
+    "countryCode": "JO",
+    "currencySymbol": "د.ا",
+    "flagUrl": "https://flagcdn.com/jo.svg"
+  },
+  {
+    "currencyId": "JPY",
+    "currencyName": "Japanese Yen",
+    "countryCode": "JP",
+    "currencySymbol": "¥",
+    "flagUrl": "https://flagcdn.com/jp.svg"
+  },
+  {
+    "currencyId": "KES",
+    "currencyName": "Kenyan Shilling",
+    "countryCode": "KE",
+    "currencySymbol": "KSh",
+    "flagUrl": "https://flagcdn.com/ke.svg"
+  },
+  {
+    "currencyId": "KGS",
+    "currencyName": "Kyrgystani Som",
+    "countryCode": "KG",
+    "currencySymbol": "с",
+    "flagUrl": "https://flagcdn.com/kg.svg"
+  },
+  {
+    "currencyId": "KHR",
+    "currencyName": "Cambodian Riel",
+    "countryCode": "KH",
+    "currencySymbol": "៛",
+    "flagUrl": "https://flagcdn.com/kh.svg"
+  },
+  {
+    "currencyId": "KMF",
+    "currencyName": "Comorian Franc",
+    "countryCode": "KM",
+    "currencySymbol": "CF",
+    "flagUrl": "https://flagcdn.com/km.svg"
+  },
+  {
+    "currencyId": "KPW",
+    "currencyName": "North Korean Won",
+    "countryCode": "KP",
+    "currencySymbol": "₩",
+    "flagUrl": "https://flagcdn.com/kp.svg"
+  },
+  {
+    "currencyId": "KRW",
+    "currencyName": "South Korean Won",
+    "countryCode": "KR",
+    "currencySymbol": "₩",
+    "flagUrl": "https://flagcdn.com/kr.svg"
+  },
+  {
+    "currencyId": "KWD",
+    "currencyName": "Kuwaiti Dinar",
+    "countryCode": "KW",
+    "currencySymbol": "د.ك",
+    "flagUrl": "https://flagcdn.com/kw.svg"
+  },
+  {
+    "currencyId": "KYD",
+    "currencyName": "Cayman Islands Dollar",
+    "countryCode": "KY",
+    "currencySymbol": "$",
+    "flagUrl": "https://flagcdn.com/ky.svg"
+  },
+  {
+    "currencyId": "KZT",
+    "currencyName": "Kazakhstani Tenge",
+    "countryCode": "KZ",
+    "currencySymbol": "₸",
+    "flagUrl": "https://flagcdn.com/kz.svg"
+  },
+  {
+    "currencyId": "LAK",
+    "currencyName": "Laotian Kip",
+    "countryCode": "LA",
+    "currencySymbol": "₭",
+    "flagUrl": "https://flagcdn.com/la.svg"
+  },
+  {
+    "currencyId": "LBP",
+    "currencyName": "Lebanese Pound",
+    "countryCode": "LB",
+    "currencySymbol": "ل.ل",
+    "flagUrl": "https://flagcdn.com/lb.svg"
+  },
+  {
+    "currencyId": "LKR",
+    "currencyName": "Sri Lankan Rupee",
+    "countryCode": "LK",
+    "currencySymbol": "Rs",
+    "flagUrl": "https://flagcdn.com/lk.svg"
+  },
+  {
+    "currencyId": "LRD",
+    "currencyName": "Liberian Dollar",
+    "countryCode": "LR",
+    "currencySymbol": "$",
+    "flagUrl": "https://flagcdn.com/lr.svg"
+  },
+  {
+    "currencyId": "LSL",
+    "currencyName": "Lesotho Loti",
+    "countryCode": "LS",
+    "currencySymbol": "L",
+    "flagUrl": "https://flagcdn.com/ls.svg"
+  },
+  {
+    "currencyId": "LTL",
+    "currencyName": "Lithuanian Litas",
+    "countryCode": "LT",
+    "currencySymbol": "Lt",
+    "flagUrl": "https://flagcdn.com/lt.svg"
+  },
+  {
+    "currencyId": "LVL",
+    "currencyName": "Latvian Lats",
+    "countryCode": "LV",
+    "currencySymbol": "Ls",
+    "flagUrl": "https://flagcdn.com/lv.svg"
+  },
+  {
+    "currencyId": "LYD",
+    "currencyName": "Libyan Dinar",
+    "countryCode": "LY",
+    "currencySymbol": "ل.د",
+    "flagUrl": "https://flagcdn.com/ly.svg"
+  },
+  {
+    "currencyId": "MAD",
+    "currencyName": "Moroccan Dirham",
+    "countryCode": "MA",
+    "currencySymbol": "د.م.",
+    "flagUrl": "https://flagcdn.com/ma.svg"
+  },
+  {
+    "currencyId": "MDL",
+    "currencyName": "Moldovan Leu",
+    "countryCode": "MD",
+    "currencySymbol": "L",
+    "flagUrl": "https://flagcdn.com/md.svg"
+  },
+  {
+    "currencyId": "MGA",
+    "currencyName": "Malagasy Ariary",
+    "countryCode": "MG",
+    "currencySymbol": "Ar",
+    "flagUrl": "https://flagcdn.com/mg.svg"
+  },
+  {
+    "currencyId": "MKD",
+    "currencyName": "Macedonian Denar",
+    "countryCode": "MK",
+    "currencySymbol": "ден",
+    "flagUrl": "https://flagcdn.com/mk.svg"
+  },
+  {
+    "currencyId": "MMK",
+    "currencyName": "Myanma Kyat",
+    "countryCode": "MM",
+    "currencySymbol": "Ks",
+    "flagUrl": "https://flagcdn.com/mm.svg"
+  },
+  {
+    "currencyId": "MNT",
+    "currencyName": "Mongolian Tugrik",
+    "countryCode": "MN",
+    "currencySymbol": "₮",
+    "flagUrl": "https://flagcdn.com/mn.svg"
+  },
+  {
+    "currencyId": "MOP",
+    "currencyName": "Macanese Pataca",
+    "countryCode": "MO",
+    "currencySymbol": "MOP$",
+    "flagUrl": "https://flagcdn.com/mo.svg"
+  },
+  {
+    "currencyId": "MRO",
+    "currencyName": "Mauritanian Ouguiya",
+    "countryCode": "MR",
+    "currencySymbol": "UM",
+    "flagUrl": "https://flagcdn.com/mr.svg"
+  },
+  {
+    "currencyId": "MUR",
+    "currencyName": "Mauritian Rupee",
+    "countryCode": "MU",
+    "currencySymbol": "₨",
+    "flagUrl": "https://flagcdn.com/mu.svg"
+  },
+  {
+    "currencyId": "MVR",
+    "currencyName": "Maldivian Rufiyaa",
+    "countryCode": "MV",
+    "currencySymbol": "Rf",
+    "flagUrl": "https://flagcdn.com/mv.svg"
+  },
+  {
+    "currencyId": "MWK",
+    "currencyName": "Malawian Kwacha",
+    "countryCode": "MW",
+    "currencySymbol": "MK",
+    "flagUrl": "https://flagcdn.com/mw.svg"
+  },
+  {
+    "currencyId": "MXN",
+    "currencyName": "Mexican Peso",
+    "countryCode": "MX",
+    "currencySymbol": "$",
+    "flagUrl": "https://flagcdn.com/mx.svg"
+  },
+  {
+    "currencyId": "MYR",
+    "currencyName": "Malaysian Ringgit",
+    "countryCode": "MY",
+    "currencySymbol": "RM",
+    "flagUrl": "https://flagcdn.com/my.svg"
+  },
+  {
+    "currencyId": "MZN",
+    "currencyName": "Mozambican Metical",
+    "countryCode": "MZ",
+    "currencySymbol": "MT",
+    "flagUrl": "https://flagcdn.com/mz.svg"
+  },
+  {
+    "currencyId": "NAD",
+    "currencyName": "Namibian Dollar",
+    "countryCode": "NA",
+    "currencySymbol": "$",
+    "flagUrl": "https://flagcdn.com/na.svg"
+  },
+  {
+    "currencyId": "NGN",
+    "currencyName": "Nigerian Naira",
+    "countryCode": "NG",
+    "currencySymbol": "₦",
+    "flagUrl": "https://flagcdn.com/ng.svg"
+  },
+  {
+    "currencyId": "NIO",
+    "currencyName": "Nicaraguan Córdoba",
+    "countryCode": "NI",
+    "currencySymbol": "C$",
+    "flagUrl": "https://flagcdn.com/ni.svg"
+  },
+  {
+    "currencyId": "NOK",
+    "currencyName": "Norwegian Krone",
+    "countryCode": "NO",
+    "currencySymbol": "kr",
+    "flagUrl": "https://flagcdn.com/no.svg"
+  },
+  {
+    "currencyId": "NPR",
+    "currencyName": "Nepalese Rupee",
+    "countryCode": "NP",
+    "currencySymbol": "₨",
+    "flagUrl": "https://flagcdn.com/np.svg"
+  },
+  {
+    "currencyId": "NZD",
+    "currencyName": "New Zealand Dollar",
+    "countryCode": "NZ",
+    "currencySymbol": "$",
+    "flagUrl": "https://flagcdn.com/nz.svg"
+  },
+  {
+    "currencyId": "OMR",
+    "currencyName": "Omani Rial",
+    "countryCode": "OM",
+    "currencySymbol": "ر.ع.",
+    "flagUrl": "https://flagcdn.com/om.svg"
+  },
+  {
+    "currencyId": "PAB",
+    "currencyName": "Panamanian Balboa",
+    "countryCode": "PA",
+    "currencySymbol": "B/.",
+    "flagUrl": "https://flagcdn.com/pa.svg"
+  },
+  {
+    "currencyId": "PEN",
+    "currencyName": "Peruvian Nuevo Sol",
+    "countryCode": "PE",
+    "currencySymbol": "S/",
+    "flagUrl": "https://flagcdn.com/pe.svg"
+  },
+  {
+    "currencyId": "PGK",
+    "currencyName": "Papua New Guinean Kina",
+    "countryCode": "PG",
+    "currencySymbol": "K",
+    "flagUrl": "https://flagcdn.com/pg.svg"
+  },
+  {
+    "currencyId": "PHP",
+    "currencyName": "Philippine Peso",
+    "countryCode": "PH",
+    "currencySymbol": "₱",
+    "flagUrl": "https://flagcdn.com/ph.svg"
+  },
+  {
+    "currencyId": "PKR",
+    "currencyName": "Pakistani Rupee",
+    "countryCode": "PK",
+    "currencySymbol": "₨",
+    "flagUrl": "https://flagcdn.com/pk.svg"
+  },
+  {
+    "currencyId": "PLN",
+    "currencyName": "Polish Zloty",
+    "countryCode": "PL",
+    "currencySymbol": "zł",
+    "flagUrl": "https://flagcdn.com/pl.svg"
+  },
+  {
+    "currencyId": "PYG",
+    "currencyName": "Paraguayan Guarani",
+    "countryCode": "PY",
+    "currencySymbol": "₲",
+    "flagUrl": "https://flagcdn.com/py.svg"
+  },
+  {
+    "currencyId": "QAR",
+    "currencyName": "Qatari Rial",
+    "countryCode": "QA",
+    "currencySymbol": "ر.ق",
+    "flagUrl": "https://flagcdn.com/qa.svg"
+  },
+  {
+    "currencyId": "RON",
+    "currencyName": "Romanian Leu",
+    "countryCode": "RO",
+    "currencySymbol": "lei",
+    "flagUrl": "https://flagcdn.com/ro.svg"
+  },
+  {
+    "currencyId": "RSD",
+    "currencyName": "Serbian Dinar",
+    "countryCode": "RS",
+    "currencySymbol": "дин",
+    "flagUrl": "https://flagcdn.com/rs.svg"
+  },
+  {
+    "currencyId": "RUB",
+    "currencyName": "Russian Ruble",
+    "countryCode": "RU",
+    "currencySymbol": "₽",
+    "flagUrl": "https://flagcdn.com/ru.svg"
+  },
+  {
+    "currencyId": "RWF",
+    "currencyName": "Rwandan Franc",
+    "countryCode": "RW",
+    "currencySymbol": "Fr",
+    "flagUrl": "https://flagcdn.com/rw.svg"
+  },
+  {
+    "currencyId": "SAR",
+    "currencyName": "Saudi Riyal",
+    "countryCode": "SA",
+    "currencySymbol": "ر.س",
+    "flagUrl": "https://flagcdn.com/sa.svg"
+  },
+  {
+    "currencyId": "SBD",
+    "currencyName": "Solomon Islands Dollar",
+    "countryCode": "SB",
+    "currencySymbol": "$",
+    "flagUrl": "https://flagcdn.com/sb.svg"
+  },
+  {
+    "currencyId": "SCR",
+    "currencyName": "Seychellois Rupee",
+    "countryCode": "SC",
+    "currencySymbol": "₨",
+    "flagUrl": "https://flagcdn.com/sc.svg"
+  },
+  {
+    "currencyId": "SDG",
+    "currencyName": "Sudanese Pound",
+    "countryCode": "SD",
+    "currencySymbol": "ج.س",
+    "flagUrl": "https://flagcdn.com/sd.svg"
+  },
+  {
+    "currencyId": "SEK",
+    "currencyName": "Swedish Krona",
+    "countryCode": "SE",
+    "currencySymbol": "kr",
+    "flagUrl": "https://flagcdn.com/se.svg"
+  },
+  {
+    "currencyId": "SGD",
+    "currencyName": "Singapore Dollar",
+    "countryCode": "SG",
+    "currencySymbol": "$",
+    "flagUrl": "https://flagcdn.com/sg.svg"
+  },
+  {
+    "currencyId": "SHP",
+    "currencyName": "Saint Helena Pound",
+    "countryCode": "SH",
+    "currencySymbol": "£",
+    "flagUrl": "https://flagcdn.com/sh.svg"
+  },
+  {
+    "currencyId": "SLE",
+    "currencyName": "Sierra Leonean Leone",
+    "countryCode": "SL",
+    "currencySymbol": "Le",
+    "flagUrl": "https://flagcdn.com/sl.svg"
+  },
+  {
+    "currencyId": "SLL",
+    "currencyName": "Sierra Leonean Leone (old)",
+    "countryCode": "SL",
+    "currencySymbol": "Le",
+    "flagUrl": "https://flagcdn.com/sl.svg"
+  },
+  {
+    "currencyId": "SOS",
+    "currencyName": "Somali Shilling",
+    "countryCode": "SO",
+    "currencySymbol": "Sh",
+    "flagUrl": "https://flagcdn.com/so.svg"
+  },
+  {
+    "currencyId": "SRD",
+    "currencyName": "Surinamese Dollar",
+    "countryCode": "SR",
+    "currencySymbol": "$",
+    "flagUrl": "https://flagcdn.com/sr.svg"
+  },
+  {
+    "currencyId": "STD",
+    "currencyName": "São Tomé and Príncipe Dobra",
+    "countryCode": "ST",
+    "currencySymbol": "Db",
+    "flagUrl": "https://flagcdn.com/st.svg"
+  },
+  {
+    "currencyId": "SVC",
+    "currencyName": "Salvadoran Colón",
+    "countryCode": "SV",
+    "currencySymbol": "₡",
+    "flagUrl": "https://flagcdn.com/sv.svg"
+  },
+  {
+    "currencyId": "SYP",
+    "currencyName": "Syrian Pound",
+    "countryCode": "SY",
+    "currencySymbol": "£S",
+    "flagUrl": "https://flagcdn.com/sy.svg"
+  },
+  {
+    "currencyId": "SZL",
+    "currencyName": "Swazi Lilangeni",
+    "countryCode": "SZ",
+    "currencySymbol": "L",
+    "flagUrl": "https://flagcdn.com/sz.svg"
+  },
+  {
+    "currencyId": "THB",
+    "currencyName": "Thai Baht",
+    "countryCode": "TH",
+    "currencySymbol": "฿",
+    "flagUrl": "https://flagcdn.com/th.svg"
+  },
+  {
+    "currencyId": "TJS",
+    "currencyName": "Tajikistani Somoni",
+    "countryCode": "TJ",
+    "currencySymbol": "ЅМ",
+    "flagUrl": "https://flagcdn.com/tj.svg"
+  },
+  {
+    "currencyId": "TMT",
+    "currencyName": "Turkmenistani Manat",
+    "countryCode": "TM",
+    "currencySymbol": "m",
+    "flagUrl": "https://flagcdn.com/tm.svg"
+  },
+  {
+    "currencyId": "TND",
+    "currencyName": "Tunisian Dinar",
+    "countryCode": "TN",
+    "currencySymbol": "د.ت",
+    "flagUrl": "https://flagcdn.com/tn.svg"
+  },
+  {
+    "currencyId": "TOP",
+    "currencyName": "Tongan Paʻanga",
+    "countryCode": "TO",
+    "currencySymbol": "T$",
+    "flagUrl": "https://flagcdn.com/to.svg"
+  },
+  {
+    "currencyId": "TRY",
+    "currencyName": "Turkish Lira",
+    "countryCode": "TR",
+    "currencySymbol": "₺",
+    "flagUrl": "https://flagcdn.com/tr.svg"
+  },
+  {
+    "currencyId": "TTD",
+    "currencyName": "Trinidad and Tobago Dollar",
+    "countryCode": "TT",
+    "currencySymbol": "$",
+    "flagUrl": "https://flagcdn.com/tt.svg"
+  },
+  {
+    "currencyId": "TWD",
+    "currencyName": "New Taiwan Dollar",
+    "countryCode": "TW",
+    "currencySymbol": "NT$",
+    "flagUrl": "https://flagcdn.com/tw.svg"
+  },
+  {
+    "currencyId": "TZS",
+    "currencyName": "Tanzanian Shilling",
+    "countryCode": "TZ",
+    "currencySymbol": "Sh",
+    "flagUrl": "https://flagcdn.com/tz.svg"
+  },
+  {
+    "currencyId": "UAH",
+    "currencyName": "Ukrainian Hryvnia",
+    "countryCode": "UA",
+    "currencySymbol": "₴",
+    "flagUrl": "https://flagcdn.com/ua.svg"
+  },
+  {
+    "currencyId": "UGX",
+    "currencyName": "Ugandan Shilling",
+    "countryCode": "UG",
+    "currencySymbol": "Sh",
+    "flagUrl": "https://flagcdn.com/ug.svg"
+  },
+  {
+    "currencyId": "USD",
+    "currencyName": "United States Dollar",
+    "countryCode": "US",
+    "currencySymbol": "$",
+    "flagUrl": "https://flagcdn.com/us.svg"
+  },
+  {
+    "currencyId": "UYU",
+    "currencyName": "Uruguayan Peso",
+    "countryCode": "UY",
+    "currencySymbol": "$U",
+    "flagUrl": "https://flagcdn.com/uy.svg"
+  },
+  {
+    "currencyId": "UZS",
+    "currencyName": "Uzbekistan Som",
+    "countryCode": "UZ",
+    "currencySymbol": "сўм",
+    "flagUrl": "https://flagcdn.com/uz.svg"
+  },
+  {
+    "currencyId": "VEF",
+    "currencyName": "Venezuelan Bolívar Fuerte",
+    "countryCode": "VE",
+    "currencySymbol": "Bs",
+    "flagUrl": "https://flagcdn.com/ve.svg"
+  },
+  {
+    "currencyId": "VES",
+    "currencyName": "Sovereign Bolivar",
+    "countryCode": "VE",
+    "currencySymbol": "Bs",
+    "flagUrl": "https://flagcdn.com/ve.svg"
+  },
+  {
+    "currencyId": "VND",
+    "currencyName": "Vietnamese Dong",
+    "countryCode": "VN",
+    "currencySymbol": "₫",
+    "flagUrl": "https://flagcdn.com/vn.svg"
+  },
+  {
+    "currencyId": "VUV",
+    "currencyName": "Vanuatu Vatu",
+    "countryCode": "VU",
+    "currencySymbol": "Vt",
+    "flagUrl": "https://flagcdn.com/vu.svg"
+  },
+  {
+    "currencyId": "WST",
+    "currencyName": "Samoan Tala",
+    "countryCode": "WS",
+    "currencySymbol": "T",
+    "flagUrl": "https://flagcdn.com/ws.svg"
+  },
+  {
+    "currencyId": "XAF",
+    "currencyName": "CFA Franc BEAC",
+    "countryCode": "CM",
+    "currencySymbol": "FCFA",
+    "flagUrl": "https://flagcdn.com/cm.svg"
+  },
+  {
+    "currencyId": "XAG",
+    "currencyName": "Silver (troy ounce)",
+    "countryCode": "XX",
+    "currencySymbol": "oz",
+    "flagUrl": "https://flagcdn.com/un.svg"
+  },
+  {
+    "currencyId": "XAU",
+    "currencyName": "Gold (troy ounce)",
+    "countryCode": "XX",
+    "currencySymbol": "oz",
+    "flagUrl": "https://flagcdn.com/un.svg"
+  },
+  {
+    "currencyId": "XCD",
+    "currencyName": "East Caribbean Dollar",
+    "countryCode": "AG",
+    "currencySymbol": "$",
+    "flagUrl": "https://flagcdn.com/ag.svg"
+  },
+  {
+    "currencyId": "XDR",
+    "currencyName": "Special Drawing Rights",
+    "countryCode": "XX",
+    "currencySymbol": "SDR",
+    "flagUrl": "https://flagcdn.com/un.svg"
+  },
+  {
+    "currencyId": "XOF",
+    "currencyName": "CFA Franc BCEAO",
+    "countryCode": "SN",
+    "currencySymbol": "CFA",
+    "flagUrl": "https://flagcdn.com/sn.svg"
+  },
+  {
+    "currencyId": "XPF",
+    "currencyName": "CFP Franc",
+    "countryCode": "PF",
+    "currencySymbol": "₣",
+    "flagUrl": "https://flagcdn.com/pf.svg"
+  },
+  {
+    "currencyId": "YER",
+    "currencyName": "Yemeni Rial",
+    "countryCode": "YE",
+    "currencySymbol": "﷼",
+    "flagUrl": "https://flagcdn.com/ye.svg"
+  },
+  {
+    "currencyId": "ZAR",
+    "currencyName": "South African Rand",
+    "countryCode": "ZA",
+    "currencySymbol": "R",
+    "flagUrl": "https://flagcdn.com/za.svg"
+  },
+  {
+    "currencyId": "ZMK",
+    "currencyName": "Zambian Kwacha (pre-2013)",
+    "countryCode": "ZM",
+    "currencySymbol": "ZK",
+    "flagUrl": "https://flagcdn.com/zm.svg"
+  },
+  {
+    "currencyId": "ZMW",
+    "currencyName": "Zambian Kwacha",
+    "countryCode": "ZM",
+    "currencySymbol": "K",
+    "flagUrl": "https://flagcdn.com/zm.svg"
+  },
+  {
+    "currencyId": "ZWL",
+    "currencyName": "Zimbabwean Dollar",
+    "countryCode": "ZW",
+    "currencySymbol": "Z$",
+    "flagUrl": "https://flagcdn.com/zw.svg"
+  }
+]

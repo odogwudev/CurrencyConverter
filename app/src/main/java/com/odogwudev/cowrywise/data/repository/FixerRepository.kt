@@ -10,6 +10,7 @@ import com.odogwudev.cowrywise.domain.model.TimeSeriesDao
 import com.odogwudev.cowrywise.domain.model.TimeSeriesRateEntity
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.emitAll
+import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.map
 import javax.inject.Inject
@@ -96,14 +97,69 @@ class FixerRepository @Inject constructor(
             emit(Resource.Error("Network error: ${e.localizedMessage}"))
             return@flow
         }
-
-        // 3) After successful fetch, emit data from DB
-        val dbFlow = exchangeDao.getRatesByBase(base ?: "EUR").map { rates ->
+        val dbFlow = exchangeDao.getRatesByBase(base?:"EUR").map { rates ->
             Resource.Success(rates) as Resource<List<ExchangeRateEntity>>
         }
-
-        // 4) Combine or flatten that flow
         emitAll(dbFlow)
+
+    }
+
+    fun convertLocally(
+        from: String,  // e.g. "USD"
+        to: String,    // e.g. "PLN"
+        amount: Double
+    ): Flow<Resource<Double>> = flow {
+        emit(Resource.Loading)
+        try {
+            // 1) Attempt to get rates from DB (where base="EUR").
+            var fromEntity = exchangeDao.getRateByCurrency("EUR", from)
+            var toEntity = exchangeDao.getRateByCurrency("EUR", to)
+
+            // 2) If either is missing, fetch them from the network.
+            if (fromEntity == null || toEntity == null) {
+                // We'll fetch from the "latest" endpoint to get those 2 + EUR
+                // Because base won't matter on free plan, pass base="" or "EUR".
+                // We need at least from, to, and EUR in symbols.
+                val neededSymbols = listOf(from, to, "EUR")
+                    .filter { it.isNotBlank() }
+                    .joinToString(",")
+
+                // We only want the first emission from getLatestRates (which is loading -> success/error).
+                // So we can do `.first()` to wait for the initial result.
+                val fetchResult = getLatestRates(base = "", symbols = neededSymbols).first()
+
+                // If that fetch fails, it will emit Resource.Error, so handle that:
+                if (fetchResult is Resource.Error) {
+                    // Forward the error to the UI
+                    emit(Resource.Error(fetchResult.message))
+                    return@flow
+                }
+
+                // 3) After a successful network fetch, re-check the DB.
+                fromEntity = exchangeDao.getRateByCurrency("EUR", from)
+                toEntity   = exchangeDao.getRateByCurrency("EUR", to)
+            }
+
+            // 4) If STILL missing, we cannot convert.
+            if (fromEntity == null || toEntity == null) {
+                emit(Resource.Error("Missing rate for $from or $to"))
+                return@flow
+            }
+
+            // 5) Now do local conversion:
+            // e.g. 1 EUR = 1.0378 USD => fromRate = 1.0378
+            // e.g. 1 EUR = 4.14 PLN   => toRate   = 4.14
+            val fromRate = fromEntity.rate
+            val toRate   = toEntity.rate
+
+            // Formula: amountInB = (amount / fromRate) * toRate
+            val result = (amount / fromRate) * toRate
+
+            emit(Resource.Success(result))
+
+        } catch (e: Exception) {
+            emit(Resource.Error("Conversion failed: ${e.localizedMessage}"))
+        }
     }
 
 

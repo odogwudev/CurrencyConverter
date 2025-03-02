@@ -5,7 +5,11 @@ import androidx.room.RoomDatabase
 import com.odogwudev.cowrywise.data.model.ExchangeRateEntity
 
 @Database(
-    entities = [ExchangeRateEntity::class],
+    entities = [
+        ExchangeRateEntity::class,
+        SymbolEntity::class,
+        TimeSeriesRateEntity::class
+    ],
     version = 1,
     exportSchema = false
 )
