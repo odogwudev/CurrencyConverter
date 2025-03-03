@@ -24,6 +24,12 @@ A Jetpack Compose Android app that fetches exchange rates from the [Fixer.io](ht
 **Video Walkthrough**  
 [![Video Demo](https://img.shields.io/badge/View%20video-Click%20here-blue.svg)](https://github.com/odogwudev/CurrencyConverter/blob/master/Screen_recording_20250302_180838.mp4)
 
+[![Video Demo](https://img.shields.io/badge/View%20video-Click%20here-blue.svg)](https://github.com/odogwudev/CurrencyConverter/blob/master/Screen_recording_20250303_095800.webm)
+
+
+[![Video Demo](https://img.shields.io/badge/View%20video-Click%20here-blue.svg)](https://github.com/odogwudev/CurrencyConverter/blob/master/Screen_recording_20250303_095831.webm)
+
+
 *(If the video doesn’t autoplay, right-click and select "Open Link in New Tab," or download to view.)*
 
 ---
@@ -51,9 +57,9 @@ A Jetpack Compose Android app that fetches exchange rates from the [Fixer.io](ht
 
 ## Screenshots
 
-| Home Screen | Conversion |
-|-------------|-----------|
-| <img src="https://github.com/odogwudev/CurrencyConverter/blob/master/Screenshot_20250302_180739.png" width="250"/> | <img src="https://github.com/odogwudev/CurrencyConverter/blob/master/Screenshot_20250302_180752.png" width="250"/> |
+| Home Screen | Conversion | Select Country | 
+|-------------|-----------|-----------|
+| <img src="https://github.com/odogwudev/CurrencyConverter/blob/master/Screenshot_20250302_180739.png" width="250"/> | <img src="https://github.com/odogwudev/CurrencyConverter/blob/master/Screenshot_20250302_180752.png" width="250"/> | <img src="https://github.com/odogwudev/CurrencyConverter/blob/master/Screenshot_20250303_095734.png" width="250"/> | 
 
 ---
 
